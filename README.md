@@ -1,10 +1,10 @@
-# Python Course Summary for Bank Indonesia's Handover Training
+# Python Course Summary 
 
 ## Introduction
 
 **Python** is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
 
-In this summary, the main focus is on Python's data analysis module such as usage of **pandas** library, indexing, slicing, and other data analysis techniques. Other than that, there is also a tutorial of how to read data from local file, database, and read data from calling an API. The summary is also based on the material that has been delivered to the participants of the Handover Training.
+In this summary, the main focus is on Python's data analysis module such as usage of **pandas** library, indexing, slicing, and other data analysis techniques. Other than that, there is also a tutorial of how to read data from local file, database, and read data from calling an API.
 
 In addition to this summary, you can access the materials and modules that has been made by Mr. Samuel Chan about Python for data analysis on this [Github repository](https://github.com/onlyphantom/dataanalysis). You can download all the files from the code button -> Download ZIP. Hopefully this additional material will be helpful for you to learn Python.
 
