@@ -462,3 +462,7 @@ If the request is successful, the status code will be 200. Otherwise, the status
 text = json.loads(req.text)
 face = pd.DataFrame(text)
 ```
+
+# Source
+- [Python](https://www.python.org/doc/essays/blurb/)
+- [Data Operator](https://www.geeksforgeeks.org/python-operators/)
