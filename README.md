@@ -43,6 +43,7 @@ x = [1, 2, 3, 4, 5]
 So, from the x list above, we can access the first element by `x[0]`, where the value of `x[0]` is 1, the value of `x[1]` = 2, and so on.
 
 <div id="operator"></div>
+
 ### Data Operator
 
 **Arithmetic Operator**
@@ -124,6 +125,7 @@ In the following section, we'll take a closer look at some of the most common sl
     By default, if the `n=` parameter is not specified, `head()` returns the first 5 rows and `tail()` returns the last 5 rows.
 
 - `select_dtypes()`  
+
     The `select_dtypes()` function returns a subset of the dataframe with only the columns that have the specified data types.
 
     ```python
@@ -133,6 +135,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a subset of the dataframe with only the columns that have integer data types.
 
 - Using `.drop()` 
+
     The `.drop()` function is used to drop rows or columns from the dataframe.
 
     ```python
@@ -141,6 +144,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will drop the column `column_name` from the dataframe.
 
 - The `[]` operator
+
     The `[]` operator is used to access the rows or columns of the dataframe.
     
     ```python
@@ -150,6 +154,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a subset of the dataframe with only the columns that have the specified data types.
 
 - `.loc`  
+
     The `.loc` function is used to select rows or columns from the dataframe. Using .loc, we can select rows or columns by their index name or integer position.
 
     ```python
@@ -159,6 +164,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a subset of the dataframe with only the rows that have index 0, 1, and 2 and the columns that have column names `A` and `C`.
 
 - `.iloc`
+
     The `.iloc` function is used to select rows or columns from the dataframe. Using .iloc, we can select rows or columns only by their index integer position.
 
     ```python
@@ -168,6 +174,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a subset of the dataframe with only the rows that have index 0, 1, and 2 and the columns that have index 0, 1, and 2. The difference between `.loc` and `.iloc` is that `.loc` is used to select rows or columns by their index name or integer position and `.iloc` is used to select rows or columns only by their index integer position.
 
 - Conditional subsetting
+
     Conditional subsetting is used to select rows or columns from the dataframe based on some condition.
 
     ```python
@@ -179,6 +186,7 @@ In the following section, we'll take a closer look at some of the most common sl
 ### Another Pandas Library Function
 
 - `.describe()`
+
     The `.describe()` function is used to summarize the dataframe.
     
     ```python
@@ -188,6 +196,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a summary of the dataframe especially for numeric columns. It will shown the count, mean, standard deviation, minimum, maximum, and percentiles of each numeric columns in the dataframe.
 
 - `.info()`
+
     The `.info()` function is used to show the dataframe information.
     
     ```python
@@ -196,16 +205,18 @@ In the following section, we'll take a closer look at some of the most common sl
     
     It means that the function will return a summary of the dataframe. It will show the number of rows, columns, data types, and memory usage of the dataframe.
 
-- `.columns()`
-    The `.columns()` function is used to show the column names of the dataframe.
+- `.columns`
+
+    The `.columns` function is used to show the column names of the dataframe.
     
     ```python
-    df.columns()
+    df.columns
     ```
     
     It means that the function will return a list of column names of the dataframe.
 
 - `.shape`
+
     The `.shape` function is used to show the shape of the dataframe.
     
     ```python
@@ -215,6 +226,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a tuple of the number of rows and columns of the dataframe.
 
 - `.value_counts()`
+
     The `.value_counts()` function is used to show the value counts of the dataframe.
     
     ```python
@@ -224,6 +236,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a series of the value counts of the dataframe. It can show how many times each unique value appears in the dataframe.
 
 - `.sort_values()`
+
     The `.sort_values()` function is used to sort the dataframe.
 
     ```python
@@ -233,6 +246,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a sorted dataframe based on the values in the column `A`.
 
 - `.groupby()`
+
     The `.groupby()` function is used to group the dataframe by some column.
     
     ```python
@@ -242,6 +256,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a grouped dataframe based on the values in the column `A`.
 
 - `pd.crosstab()`
+
     The `pd.crosstab()` function is used to show the cross tabulation of the dataframe.
     
     ```python
@@ -251,6 +266,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a cross tabulation of the dataframe.
 
 - `pd.merge()`
+
     The `pd.merge()` function is used to merge two dataframe into one dataframe (or usually also known as `join`).
     
     ```python
@@ -262,6 +278,7 @@ In the following section, we'll take a closer look at some of the most common sl
 ### Date Data Manipulation
 
 - `pd.to_datetime()`
+
     The `pd.to_datetime()` function is used to convert the dataframe to datetime format.
     
     ```python
@@ -271,6 +288,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a datetime format of the values in the column `A`.
 
 - `dt.date`
+
     The `dt.date` function is used to convert the datetime format to date format.
     
     ```python
@@ -280,6 +298,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a date format of the values in the column `A`.
 
 - `dt.hour`
+
     The `dt.hour` function is used to show the hour of the datetime format.
     
     ```python
@@ -289,6 +308,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return the hour of the datetime format.
 
 - `dt.day_name()`
+
     The `dt.day_name()` function is used to show the day name of the datetime format.
     
     ```python
@@ -300,6 +320,7 @@ In the following section, we'll take a closer look at some of the most common sl
 ### String Data Manupulation
 
 -   `pd.Series.str.split()`
+
     The `pd.Series.str.split()` function is used to split the string in the dataframe.
     
     ```python
@@ -309,6 +330,7 @@ In the following section, we'll take a closer look at some of the most common sl
     The function will return a list of the values in the column `A` split by the comma.
 
 - `pd.Series.str.contains()`
+
     The `pd.Series.str.contains()` function is used to replace the string in the dataframe.
     
     ```python
@@ -318,6 +340,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a boolean of the values in the column `A`. If the string contains the letter `a`, then the boolean will be True. Otherwise, the boolean will be False.
 
 - `pd.Series.str.replace()`
+
     The `pd.Series.str.replace()` function is used to replace the string in the dataframe.
     
     ```python
@@ -327,6 +350,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a string of the values in the column `A`. If the string contains the letter `a`, then the string will be replaced with the letter `b`.
 
 - `pd.Series.str.len()`
+
     The `pd.Series.str.len()` function is used to show the length of the string in the dataframe.
     
     ```python
@@ -336,6 +360,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a series of the length of the values in the column `A`.
 
 - `pd.Series.str.lower()`
+
     The `pd.Series.str.lower()` function is used to show the lower case of the string in the dataframe.
     
     ```python
@@ -345,6 +370,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a series of the lower case of the values in the column `A`.
 
 - `pd.Series.str.upper()`
+
     The `pd.Series.str.upper()` function is used to show the upper case of the string in the dataframe.
     
     ```python
@@ -354,6 +380,7 @@ In the following section, we'll take a closer look at some of the most common sl
     It means that the function will return a series of the upper case of the values in the column `A`.
 
 - `pd.Series.str.startswith()`
+
     The `pd.Series.str.startswith()` function is used to show the start with of the string in the dataframe.
     
     ```python
@@ -368,14 +395,14 @@ In the following section, we'll take a closer look at some of the most common sl
 
 There are several ways to read data in python. One of the most used function is read data from local file using pandas library.
 
-    ```python
-    df = pd.read_csv("data.csv")
-    ```
+```python
+df = pd.read_csv("data.csv")
+```
     
-    The function will return a dataframe of the data in the file `data.csv`.
+The function will return a dataframe of the data in the file `data.csv`.
 
-    There are also several ways to read another data format using pandas library. Some of the data formats are:
-    pd.read_excel(), pd.read_json(), pd.read_html(), pd.read_sql(), pd.read_sql_query(), pd.read_hdf(), pd.read_pickle(), pd.read_sas(), pd.read_stata(), pd.read_table(), pd.read_clipboard(), pd.read_fwf(), pd.read_gbq(), pd.read_gbq().
+There are also several ways to read another data format using pandas library. Some of the data formats are:
+pd.read_excel(), pd.read_json(), pd.read_html(), pd.read_sql(), pd.read_sql_query(), pd.read_hdf(), pd.read_pickle(), pd.read_sas(), pd.read_stata(), pd.read_table(), pd.read_clipboard(), pd.read_fwf(), pd.read_gbq(), pd.read_gbq().
 
 ### Read Data From Database
  The other way to import data is from the database. To read the data from the database, we must know what database we used. The explanation below will show how to read data from certain database.
@@ -421,17 +448,17 @@ There are several ways to read data in python. One of the most used function is 
 
 To call data from API we need to import `requests`, `pandas`, and `json` library. The code below will show the way to call data from API.
 
-    ```python
-    import requests
-    import json
+```python
+import requests
+import json
 
-    req = requests.get(url) #fill the "url" with the url of the API
-    req.status_code
-    ```
+req = requests.get(url) #fill the "url" with the url of the API
+req.status_code
+```
 
 If the request is successful, the status code will be 200. Otherwise, the status code will be 400. Then, if the status code is 200, we can use the `json.loads()` function to convert the response to a dictionary and use the `pd.DataFrame()` function to convert the dictionary to a dataframe.
 
-    ```python
-    text = json.loads(req.text)
-    face = pd.DataFrame(text)
-    ```
+```python
+text = json.loads(req.text)
+face = pd.DataFrame(text)
+```
